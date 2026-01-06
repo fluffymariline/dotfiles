@@ -1,0 +1,28 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: NotoSansMono;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(231, 135, 255, 1.0);
+    padding-bottom: 3px;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #000000;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button, label {
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+button:hover {
+	background-color: rgba(128, 128, 128, 0.25);
+	border: none;
+}

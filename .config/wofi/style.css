@@ -1,0 +1,14 @@
+* {
+	
+    font-family: NotoSansMono;
+}
+window {
+    background-color: rgba(231, 135, 255, 1.0);
+    color: #000000;
+    border: 3px solid rgba(100, 114, 125, 0.5);
+}
+#input {
+    background: none;
+    border: none;
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+}

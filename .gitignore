@@ -1,0 +1,11 @@
+*
+!Pictures/wallpapers
+Pictures/wallpapers/IDL and IDS*.png
+!.config/dunst
+!.config/hypr
+!.config/kitty
+!.config/waybar
+!.config/wofi
+!.gitignore
+!README.md
+!LICENSE
