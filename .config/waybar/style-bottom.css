@@ -1,0 +1,53 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: NotoSansMono;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+window#waybar {
+    background-color: transparent;
+    padding-top: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 4px #000;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+window#waybar > box {
+    background-color: rgba(231, 135, 255, 0.75);
+    border: 1px solid rgba(100, 114, 125, 0.5);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden > box {
+    opacity: 0.2;
+}
+
+
+
+button, button:hover, button:active, label {
+	padding-left: 4px;
+	padding-right: 4px;
+    border: none;
+}
+button {
+    background-color: transparent;
+    transition: background-color 250ms;
+    color: #ffffff;
+}
+
+button:hover {
+	background-color: rgba(128, 128, 128, 0.25);
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+.workspace-label {
+        color: #fff;
+        text-shadow: 0 0 4px #000;
+}
