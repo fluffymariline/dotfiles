@@ -1,0 +1,41 @@
+<schemalist>
+    <enum name="com.complecwaft.fluffymariline.Wallpaper.fill-mode">
+        <value nick="stretch" value="stretch" />
+        <value nick="center" value="center" />
+        <value nick="tile" value="tile" />
+        <value nick="cover" value="cover" />
+        <value nick="fill" value="fill" />
+    </enum>
+    <schema
+        id="com.complecwaft.fluffymariline.Wallpaper"
+        path="/com/complecwaft/fluffymariline/Wallpaper/"
+        gettext-domain="fluffypaper"
+    >
+        <key name="wallpaper-uri" type="as">
+            <default>["/usr/share/wallpapers/default.jpg"]</default>
+            <summary>The URI(s) to the wallpaper(s). Can be a video.</summary>
+            <description>
+                The URI(s) to the wallpaper(s). Can be a video.
+            </description>
+        </key>
+
+        <key
+            name="fill-mode"
+            type="com.complecwaft.fluffymariline.Wallpaper.fill-mode"
+        >
+            <default>Cover</default>
+            <summary>The fill mode of the wallpaper</summary>
+            <description>
+                The fill mode of the wallpaper.
+            </description>
+        </key>
+        <key name="time-per-wallpaper" type="i">
+            <default>300</default>
+            <summary
+            >The amount of time spent on each wallpaper, in seconds.</summary>
+            <description>
+                The amount of time spent on each wallpaper, in seconds.
+            </description>
+        </key>
+    </schema>
+</schemalist>
