@@ -5,24 +5,44 @@
 }
 
 window#waybar {
-    background-color: rgba(231, 135, 255, 1.0);
+    background-color: transparent;
     padding-bottom: 3px;
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 0 0 4px #000;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+window#waybar > box {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: rgba(231, 135, 255, 0.75);
+    border: 1px solid rgba(100, 114, 125, 0.5);
     transition-property: background-color;
     transition-duration: .5s;
 }
 
-window#waybar.hidden {
+window#waybar.hidden > box {
     opacity: 0.2;
 }
 
-button, label {
+button, button:hover, button:active, label {
 	padding-left: 4px;
 	padding-right: 4px;
+    border: none;
+}
+button {
+    background-color: transparent;
+    transition: background-color 250ms;
 }
 
 button:hover {
 	background-color: rgba(128, 128, 128, 0.25);
-	border: none;
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+.workspace-label {
+        color: #fff;
+        text-shadow: 0 0 4px #000;
 }
